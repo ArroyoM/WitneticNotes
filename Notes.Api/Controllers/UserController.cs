@@ -72,7 +72,7 @@ namespace Notes.Api.Controllers
         /// <param name="id"></param>
         /// <returns></returns>       
         [Authorize]
-        [HttpPut]
+        [HttpPut("{id}")]
         public async Task<IActionResult> Put(UserDTO userDTO, int id)
         {
             try

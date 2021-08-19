@@ -58,7 +58,12 @@ namespace Notes.Api.Controllers
                 if (validation.Item1)
                 {
                     var token = GenerateToken(validation.Item2);
-                    return Ok(new { token });
+                    return Ok(new { 
+                        tokenJwt = token,
+                        email = validation.Item2.Email,
+                        name = validation.Item2.Name,
+                        id = validation.Item2.IdUser
+                    });
                 }
 
                 return NotFound();

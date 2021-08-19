@@ -125,12 +125,12 @@ namespace Notes.Api.Controllers
         }
 
         /// <summary>
-        /// Update one book for Id
+        /// Update a book for Id
         /// </summary>
         /// <param name="bookDTO"></param>
         /// <param name="id"></param>
         /// <returns>BookDTO</returns>
-        [HttpPut]
+        [HttpPut("{id}")]
         public async Task<IActionResult> Put(BookDTO bookDTO, int id)
         {
             try
@@ -157,7 +157,7 @@ namespace Notes.Api.Controllers
         }
 
         /// <summary>
-        /// Delete one book for Id
+        /// Delete a book for Id
         /// </summary>
         /// <param name="id">int</param>
         /// <returns>response T </returns>

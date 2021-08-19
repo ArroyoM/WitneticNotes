@@ -1,12 +1,11 @@
 # WitneticNotes
 Project example of arquitect clear, using c#, .net core 3.1, docker, sql server
 
-# Requirement
-.net core 3.1 
+## Requirement
+- .net core 3.1 
+- docker
 
-docker
-
-# Installation
+## Install
 clone the project 
 
 reset packages nugets
@@ -32,12 +31,12 @@ PASSWORD write your password DB
 TOKEN-SECRET write your token example sDFDke73OkImW3MKIOWELsad343dasQ
 
 
-#create image docker
+## create image docker
 
 in the root project run 
-
+```bash
 docker build -t name .
-
+```
 
 
 
